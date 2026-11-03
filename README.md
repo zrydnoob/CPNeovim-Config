@@ -152,3 +152,33 @@ return M
 | `Ctrl+l` | Clear snippet Tab-jump marks to avoid stray Tab jumps |
 
 For all other NvChad keymaps: [https://nvchad.com/docs/config/mappings](https://nvchad.com/docs/config/mappings)
+
+## 许可证 / License
+
+**中文**
+
+本仓库中由我原创的配置代码（快捷键、插件参数、本地路径模板等）采用 [MIT License](LICENSE) 发布。
+
+本配置依赖以下项目，它们各自遵循其原始许可证：
+
+- [NvChad](https://github.com/NvChad/NvChad)
+- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+- [smear-cursor.nvim](https://github.com/sphamba/smear-cursor.nvim)
+- 其余插件见 `lazy-lock.json` 及各插件仓库
+
+本仓库不包含上述项目的源码，仅通过插件管理器引用。
+
+**English**
+
+The original configuration code in this repository (keymaps, plugin options, the local-path template, etc.) is released under the [MIT License](LICENSE).
+
+This configuration depends on the following projects, each governed by its own original license:
+
+- [NvChad](https://github.com/NvChad/NvChad)
+- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+- [smear-cursor.nvim](https://github.com/sphamba/smear-cursor.nvim)
+- For other plugins, see `lazy-lock.json` and the respective plugin repositories.
+
+This repository does not include the source code of the projects listed above; they are referenced solely through the plugin manager.
