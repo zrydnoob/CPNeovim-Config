@@ -58,7 +58,7 @@ This is my personal Neovim configuration built on top of [NvChad](https://github
 
 local M = {}
 
-M.clang_format = vim.fn.expand("此处填写 clang-format 的路径")
+M.clangFormat = vim.fn.expand("此处填写 clang-format 的路径")
 M.codelldb = vim.fn.expand("此处填写 codelldb 的路径")
 M.miDebuggerPath = vim.fn.expand("此处填写 gdb 的路径")
 
@@ -75,7 +75,7 @@ To actually use this config, create `lua/local-paths.lua` with the following:
 
 local M = {}
 
-M.clang_format = vim.fn.expand("PATH_TO_CLANG_FORMAT")
+M.clangFormat = vim.fn.expand("PATH_TO_CLANG_FORMAT")
 M.codelldb = vim.fn.expand("PATH_TO_CODELLDB")
 M.miDebuggerPath = vim.fn.expand("PATH_TO_GDB")
 

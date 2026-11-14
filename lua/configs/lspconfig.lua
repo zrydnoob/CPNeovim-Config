@@ -1,5 +1,13 @@
 require("nvchad.configs.lspconfig").defaults()
 
+-- 关闭自动补全头文件
+vim.lsp.config.clangd = {
+    cmd = {
+        'clangd',
+        '--header-insertion=never'
+    }
+}
+
 local servers = { "html", "cssls", "pyright", "clangd"}
 vim.lsp.enable(servers)
 

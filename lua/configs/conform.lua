@@ -20,7 +20,7 @@ local options = {
     -- },
 }
 
-local clang_format_path = mypaths.clang_format
+local clang_format_path = mypaths.clangFormat
 if not clang_format_path then
     return options
 end
