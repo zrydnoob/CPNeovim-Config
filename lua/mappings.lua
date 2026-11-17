@@ -11,8 +11,8 @@ map("i", "jk", "<ESC>")
 
 -- Cod Runner
 map('n', '<leader>rr', function()
-  local filename = vim.fn.expand('%:p')    -- 改：完整路径
-  local output   = vim.fn.expand('%:p:r')  -- 改：完整路径去扩展名
+  local filename = vim.fn.expand('%:p')
+  local output   = vim.fn.expand('%:p:r')
   local ext      = vim.fn.expand('%:e')
 
   local cmd
@@ -20,7 +20,7 @@ map('n', '<leader>rr', function()
     cmd = string.format('uv run python "%s"', filename)
   else
     cmd = string.format(
-      'g++ -std=c++17 -O2 -Wall "%s" -o "%s.exe" && "%s.exe"',  -- 去掉 .\
+      'g++ -std=c++17 -O2 -Wall "%s" -o "%s.exe" && "%s.exe"',
       filename, output, output)
   end
 

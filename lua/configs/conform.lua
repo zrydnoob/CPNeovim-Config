@@ -1,7 +1,7 @@
 local ok, mypaths = pcall(require, "local-paths")
 if not ok then
     mypaths = {}
-    vim.notify("local-paths不存在，代码格式化部分配置未加载", vim.log.levels.WARN)
+    vim.notify("local-paths加载失败:"..tostring(mypaths), vim.log.levels.WARN)
 end
 
 local options = {
@@ -20,7 +20,7 @@ local options = {
     -- },
 }
 
-local clang_format_path = mypaths.clangFormat
+local clang_format_path = mypaths.clang_format
 if not clang_format_path then
     return options
 end

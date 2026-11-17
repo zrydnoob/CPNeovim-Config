@@ -1,7 +1,7 @@
 local ok, mypaths = pcall(require, "local-paths")
 if not ok then
     mypaths = {}
-    vim.notify("local-paths不存在，Debug功能部分配置未加载", vim.log.levels.WARN)
+    vim.notify("local-paths不存在，代码格式化部分配置未加载", vim.log.levels.WARN)
 end
 
 
@@ -36,7 +36,7 @@ dap.listeners.before.launch.dap_exception_fix = function()
 end
 
 local codelldb_path = mypaths.codelldb
-local gdb_path = mypaths.miDebuggerPath
+local gdb_path = mypaths.mi_debugger
 
 if not codelldb_path or not gdb_path then
     return
